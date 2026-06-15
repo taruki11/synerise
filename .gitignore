@@ -11,6 +11,15 @@ reports/figures/
 reports/*.csv
 reports/*.json
 reports/*.parquet
+reports/*.docx
+reports/*.html
+reports/*.txt
+reports/**/*.csv
+reports/**/*.json
+reports/**/*.parquet
+reports/**/*.docx
+reports/**/*.html
+reports/**/*.txt
 *.tar.gz
 *.joblib
 temp_test_patch.txt
