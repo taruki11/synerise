@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.vscode/
+data/raw/
+data/processed/
+data/sample/
+models/
+reports/figures/
+reports/*.csv
+reports/*.json
+reports/*.parquet
+*.tar.gz
+*.joblib
+temp_test_patch.txt

@@ -1,0 +1,10 @@
+pandas>=2.2
+numpy>=2.1
+pyarrow>=23.0
+duckdb>=1.2
+scikit-learn>=1.6
+lightgbm>=4.6
+xgboost>=2.1
+matplotlib>=3.10
+seaborn>=0.13
+python-docx>=1.1

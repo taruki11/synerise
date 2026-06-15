@@ -1,0 +1,22 @@
+{
+  "dataset_root": "data\\raw\\synerise_dataset",
+  "observation_days": 30,
+  "label_days": 14,
+  "window_days": [
+    1,
+    3,
+    7,
+    14,
+    30
+  ],
+  "snapshot_step_days": 14,
+  "max_snapshots": null,
+  "sample_frac": null,
+  "snapshot_count": 9,
+  "row_count": 748347,
+  "feature_count": 100,
+  "active_user_definition": "recent_engaged_buyers",
+  "active_user_definition_detail": "user had at least one product_buy in the observation window and at least one page_visit/add_to_cart/product_buy in the last 7 days before the snapshot",
+  "churn_definition": "no_buy_and_low_future_activity",
+  "churn_definition_detail": "user is churned if there is no product_buy in the next label window and future activity spans at most 1 active day"
+}
