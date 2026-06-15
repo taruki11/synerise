@@ -51,6 +51,26 @@ Raw parquet logs
   -> ROI simulation and A/B plan
 ```
 
+## Project Flowchart
+
+```mermaid
+flowchart TD
+    A["Raw Parquet Logs"] --> B["DuckDB Preprocessing"]
+    B --> C["Snapshot Generation"]
+    C --> D["Active User Filtering"]
+    D --> E["30-Day Feature Aggregation"]
+    C --> F["14-Day Future Window"]
+    F --> G["Strict Churn Label Construction"]
+    E --> H["Time-Based Train / Valid / Test Split"]
+    G --> H
+    H --> I["Model Training: LR / RF / LightGBM / XGBoost"]
+    I --> J["Offline Evaluation: AUC / PR-AUC / F1"]
+    I --> K["Rolling Backtest"]
+    J --> L["Top-K Targeting Analysis"]
+    K --> L
+    L --> M["ROI Simulation and A/B Test Plan"]
+```
+
 ## Repository Structure
 
 ```text
